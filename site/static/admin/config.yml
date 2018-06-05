@@ -3,8 +3,8 @@ backend:
   branch : step-01-add-a-menu
   publish_mode: editorial_workflow
 
-public_folder: "/img/gallery"
-media_folder: "static/images/uploads"
+
+media_folder: "src/img/gallery"
 
 collections:
   - name: gallery
@@ -12,7 +12,7 @@ collections:
     folder: "site/content/gallery" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - {label: "Name", name: "title", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
       - {label: "Gallery Image", name: "image", widget: "image"}
 
   - name: food
