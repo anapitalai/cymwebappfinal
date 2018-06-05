@@ -7,7 +7,7 @@ backend:
 
 
 media_folder: "src/img/gallery"
-public_folder: "img/gallery"
+public_folder: "/img/gallery"
 
 
 collections:
