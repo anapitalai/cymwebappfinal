@@ -1,5 +1,5 @@
 ---
 title: jowie
-image: /src/img/gallery/_anapitalai.jpg
+image: /gallery/20180523_104633.jpg
 ---
 
