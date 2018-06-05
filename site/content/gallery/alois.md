@@ -1,5 +1,5 @@
 ---
 title: alois
-image: /gallery/anapitalai.jpg
+image: /img/gallery/anapitalai.jpg
 ---
 
