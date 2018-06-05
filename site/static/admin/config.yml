@@ -3,8 +3,8 @@ backend:
   branch : step-01-add-a-menu
   publish_mode: editorial_workflow
 
-media_folder: "img/uploads" # Folder where user uploaded files should go
 public_folder: "/img/gallery"
+media_folder: "static/images/uploads"
 
 collections:
   - name: gallery
