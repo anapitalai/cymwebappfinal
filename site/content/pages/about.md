@@ -4,11 +4,33 @@ title = "About"
 url = "/about"
 +++
 
-## Something about the restaurant goes here
+## About the Children and Youths Ministry
 
 ---
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis placerat nulla, eget tempus arcu volutpat ut. Pellentesque ut ligula sit amet sapien mattis pretium. Nullam viverra, est tincidunt sagittis pretium, ligula orci tristique augue, ac feugiat libero ante ut orci. Sed dictum at arcu ac bibendum. Aenean purus libero, molestie sit amet iaculis quis, sodales et erat. Nulla auctor porta mi, id tristique orci malesuada quis. Proin commodo lacinia fringilla. In suscipit ligula a tristique consectetur. Mauris non tortor felis. Morbi nec ornare quam. Aenean ac felis porttitor, varius odio et, finibus purus. Duis at nulla rutrum, vestibulum nunc quis, interdum nunc. Morbi ac arcu eget elit blandit tincidunt. Cras velit arcu, dapibus id massa posuere, vestibulum semper orci. Aliquam ullamcorper ut justo non laoreet.
+A fellowship group under Taraka United Church.Mainly consisting of Sunday School children and Youths.
 
 Sincerely,
-# Mr. Bojangles
+# Mr Graham Kaina(Chairman)
+---
+# Youth Leaders
+
+
+
+## Weslianne Joseph
+<a href="https://www.google.com.pg" target="_blank"><img src="/img/gallery/anapitalai.jpg" 
+alt="IMAGE ALT TEXT HERE" width="180" height="180" border="10" /></a>
+## Charles
+<a href="https://www.google.com.pg" target="_blank"><img src="/img/gallery/anapitalai.jpg" 
+alt="IMAGE ALT TEXT HERE" width="180" height="180" border="10" /></a>
+
+## Graham
+<a href="https://www.google.com.pg" target="_blank"><img src="/img/gallery/anapitalai.jpg" 
+alt="IMAGE ALT TEXT HERE" width="180" height="180" border="10" /></a>
+
+## Dorothy
+<a href="https://www.google.com.pg" target="_blank"><img src="/img/gallery/anapitalai.jpg" 
+alt="IMAGE ALT TEXT HERE" width="180" height="180" border="10" /></a>
+
+## Boris
+<a href="https://www.google.com.pg" target="_blank"><img src="/img/gallery/anapitalai.jpg" 
+alt="IMAGE ALT TEXT HERE" width="180" height="180" border="10" /></a>
