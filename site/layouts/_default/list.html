@@ -49,6 +49,62 @@
         {{ end }}
       </section>
     {{ end }}
+
+  <!--Added this-->
+
+      {{ if eq .Section "program" }}
+    {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+      <section>
+        {{ if eq "categories" $taxonomyname }}
+          {{ range $key, $value := $taxonomy }}
+            {{ if ne $key "drinks"}}
+              <h2><em>{{ $key }}</em></h2>
+              <hr>
+              {{ range $value.Pages.GroupByParam "type" }}
+                <h3>{{ .Key }}</h3>
+                <ul>
+                {{ range .Pages }}
+                  <li>
+                    <p><strong>{{ .Title }}:</strong> {{ .Params.description }}</p>
+                    <p>{{ .Params.price }}</p>
+                  </li>
+                {{ end }}
+                </ul>
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </section>
+    {{ end }}
+
+
+      {{ if eq .Section "profile" }}
+    {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+      <section>
+        {{ if eq "categories" $taxonomyname }}
+          {{ range $key, $value := $taxonomy }}
+            {{ if ne $key "drinks"}}
+              <h2><em>{{ $key }}</em></h2>
+              <hr>
+              {{ range $value.Pages.GroupByParam "type" }}
+                <h3>{{ .Key }}</h3>
+                <ul>
+                {{ range .Pages }}
+                  <li>
+                    <p><strong>{{ .Title }}:</strong> {{ .Params.description }}</p>
+                    <p>{{ .Params.price }}</p>
+                  </li>
+                {{ end }}
+                </ul>
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </section>
+    {{ end }}
+  
+
+  <!--Added ends here-->
   {{ else if eq .Section "gallery" }}
     <div class="gallery-carousel">
       {{ range where .Pages "Section" "gallery" }}
