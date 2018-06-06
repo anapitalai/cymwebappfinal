@@ -35,10 +35,15 @@ collections:
     folder: "site/content/program" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - {label: "Name of Program", name: "title", widget: "string"}
-      - {label: "Short Description", name: "description", widget: "text"}
-      - {label: "Scripture", name: "type", widget: "string"}
-      - {label: "Shareperson", name: "shareperson", widget: "string"}  
+      - {label: "Leader", name: "title", widget: "string"}
+      - {label: "Program Level", name: "categories", widget: "list", default: ["tuccongregational", "morobecct","regional","ucyouth"]}
+      - {label: "Activity", name: "activity", widget: "string"}
+      - {label: "Speccial Activity", name: "sactivity", widget: "string"}  
+      - {label: "Venue", name: "venue", widget: "string"}
+      - {label: "Month", name: "month", widget: "string"}
+      - {label: "Year", name: "year", widget: "string"}
+      - {label: "Day", name: "day", widget: "string"}
+      - {label: "Remarks", name: "remarks", widget: "text"}       
 
   #- name: food
    # label: "Food Item" # Used in the UI, ie.: "New Post"
