@@ -4,5 +4,16 @@
 .sidebar-img{
     border-image-width:32px;
     height: 32px;
-    border-radius:4000000000000000000px;
+    border-radius:5px;
+}
+
+.image-container{
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.leader-image{
+    border-radius:2000000px;
+    margin:10px;
+
 }

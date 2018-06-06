@@ -19,13 +19,35 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Gallery Image", name: "image", widget: "image"}
 
-  - name: food
-    label: "Food Item" # Used in the UI, ie.: "New Post"
-    folder: "site/content/food" # The path to the folder where the documents are stored
+  - name: profile
+    label: "profile data" # Used in the UI, ie.: "New Post"
+    folder: "site/content/profile" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - {label: "Name of Item", name: "title", widget: "string"}
-      - {label: "Supported Meals", name: "categories", widget: "list", default: ["lunch", "dinner"]}
-      - {label: "Ingredients/Description", name: "description", widget: "text"}
-      - {label: "Type of Food", name: "type", widget: "string", default: "raw bar"}
-      - {label: "Price", name: "price", widget: "string"}  
+      - {label: "Name of Member", name: "title", widget: "string"}
+   #   - {label: "Supported Meals", name: "categories", widget: "list", default: ["", "dinner"]}
+      - {label: "Short Description", name: "description", widget: "text"}
+      - {label: "Age", name: "type", widget: "string"}
+      - {label: "Province", name: "province", widget: "string"}  
+ 
+  - name: program
+    label: "program name" # Used in the UI, ie.: "New Post"
+    folder: "site/content/program" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Name of Program", name: "title", widget: "string"}
+      - {label: "Short Description", name: "description", widget: "text"}
+      - {label: "Scripture", name: "type", widget: "string"}
+      - {label: "Shareperson", name: "shareperson", widget: "string"}  
+
+  #- name: food
+   # label: "Food Item" # Used in the UI, ie.: "New Post"
+    #folder: "site/content/food" # The path to the folder where the documents are stored
+    #create: true # Allow users to create new documents in this collection
+    #fields: # The fields each document in this collection have
+     # - {label: "Name of Item", name: "title", widget: "string"}
+      #- {label: "Supported Meals", name: "categories", widget: "list", default: ["lunch", "dinner"]}
+      #- {label: "Ingredients/Description", name: "description", widget: "text"}
+      #- {label: "Type of Food", name: "type", widget: "string", default: "raw bar"}
+      #- {label: "Price", name: "price", widget: "string"}  
+
