@@ -1,74 +1,81 @@
 {{ partial "header" . }}
+<div>
+    <div class="content container {{ .Title }} {{ .Section | urlize }}">
+        <h1>{{ .Section }}</h1>
+        {{ if eq .Section "profile"}}
+          {{ range .Pages }}
+      
 
-<div class="content container {{ .Title }} {{ .Section | urlize }}">
-  <h1>{{ .Section }}</h1>
-  {{ if eq .Section "food" }}
-    {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
-      <section>
-        {{ if eq "categories" $taxonomyname }}
-          {{ range $key, $value := $taxonomy }}
-            {{ if ne $key "drinks"}}
-              <h2><em>{{ $key }}</em></h2>
-              <hr>
-              {{ range $value.Pages.GroupByParam "type" }}
-                <h3>{{ .Key }}</h3>
-                <ul>
-                {{ range .Pages }}
-                  <li>
-                    <p><strong>{{ .Title }}:</strong> {{ .Params.description }}</p>
-                    <p>{{ .Params.price }}</p>
-                  </li>
-                {{ end }}
-                </ul>
-              {{ end }}
-            {{ end }}
+            <div class="row">
+              <div class="col-sm-6 col-md-4 market">
+                 <h2> {{ .Title }}</h2> <br>
+                 
+                 <a class="mark" href="#">{{ .Title }}</a>
+                 {{ .Params.province}}
+              </div>
+            </div>
+         <hr>
+
           {{ end }}
-        {{ end }}
-      </section>
-    {{ end }}
-  {{ else if eq .Section "drinks" }}
-    {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
-      <section>
-        {{ if eq "categories" $taxonomyname }}
-          {{ range $key, $value := $taxonomy }}
-            {{ if eq $key "drinks"}}
-              {{ range $value.Pages.GroupByParam "type" }}
-                <h2><em>{{ .Key }}</em></h3>
-                <hr>
-                <ul>
-                {{ range .Pages }}
-                  <li>
-                    <p><strong>{{ .Title }}:</strong> {{ .Params.description }}</p>
-                    <p>{{ .Params.price }}</p>
-                  </li>
-                {{ end }}
-                </ul>
-              {{ end }}
-            {{ end }}
+
+          {{ else if eq .Section "program" }}
+
+          {{ range .Pages }}
+          
+          <div class="row">
+              <div class="col-sm-6 col-md-4 blog">
+                  <h2>{{.Title}}</h2>
+                  <hr> <br>
+                  {{ .Params.remarks }} 
+                  <hr>   <br>
+                  
+              {{ .Params.year }}  {{ .Params.month }}  {{ .Params.venue }}
+              <br>
+               {{ .Params.activity }}  {{ .Params.sactivity }}
+               <br>
+                {{ .Params.categories }}
+              </div>
+          </div>
           {{ end }}
-        {{ end }}
-      </section>
-    {{ end }}
+        
+          {{ else if eq .Section "maps" }}
 
-  <!--Added this-->
+          {{ range .Pages }}
+          
+          <div class="row">
+              <div class="col-sm-6 col-md-4 blog">
+                  {{ .Params.title }} <br>
+                  <img src="{{ .Params.image }}" alt="">
+                  {{ .Params.image }} <br>
+                  {{ .URL }}
+              </div>
+          </div>
+          {{ end }}
 
- 
+          
 
-  <!--Added ends here-->
-  {{ else if eq .Section "gallery" }}
+
+        {{ else if eq .Section "gallery" }}
+      
     <div class="gallery-carousel">
-      {{ range where .Pages "Section" "gallery" }}
-        <div><img src="{{ .Params.image }}"/>
-        <marquee><h2>{{ .Params.title }}</h2></marquee>
-        </div>
+       {{ range where .Pages "Section" "gallery" }}
+        <a href="#"><div><img src="{{ .Params.image }}"/></div></a>
       {{ end }}
     </div>
+
     <div class="buttons">
       <button class="prev half-button">Prev</button>
       <button class="next half-button">Next</button>
     </div>
-  {{ end }}
+          
+   
+        {{ end }}  
+
 </div>
+
+
+{{ partial "footer" . }}
+
 
 <!--<div class="content container {{ .Title }} {{ .Section | urlize }}">
   <h1>{{ .Section }}</h1>
@@ -132,4 +139,3 @@
   {{ end }}
 </div>
 -->
-{{ partial "footer" . }}

@@ -21,3 +21,7 @@ title = "TUC C&Y Ministry"
     name = "Gallery"
     url  = "/gallery"
     weight = 4
+[[menu.main]]
+    name = "Feedback"
+    url  = "/contact"
+    weight = 5
