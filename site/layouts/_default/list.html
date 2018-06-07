@@ -52,26 +52,22 @@
 
   <!--Added this-->
 
-  
-  {{ else if eq .Section "profile" }}
+    {{ else if eq .Section "profile" }}
     <div class="gallery-carousel">
       {{ range where .Pages "Section" "profile" }}
-       
+      
         <marquee><h2>{{ .Params.province }}</h2></marquee>
-        </div>
+      
       {{ end }}
-  
-  {{ end 
-
-  {{ else if eq .Section "program" }}
-    <div class="gallery-carousel">
-      {{ range where .Pages "Section" "program" }}
-        <marquee><h2>{{ .Params.activity }}</h2></marquee>
-        </div>
-      {{ end }}
-  
+    </div>
+    <div class="buttons">
+      <button class="prev half-button">Prev</button>
+      <button class="next half-button">Next</button>
+    </div>
   {{ end }}
+</div>
 
+ 
 
   <!--Added ends here-->
   {{ else if eq .Section "gallery" }}
