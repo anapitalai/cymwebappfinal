@@ -36,7 +36,7 @@ collections:
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Leader", name: "title", widget: "string"}
-      - {label: "Program Level", name: "categories", widget: "list", default: ["tuccongregational", "morobecct","regional","ucyouth"]}
+     # - {label: "Program Level", name: "categories", widget: "list", default: ["tuccongregational", "morobecct","regional","ucyouth"]}
       - {label: "Activity", name: "activity", widget: "string"}
       - {label: "Speccial Activity", name: "sactivity", widget: "string"}  
       - {label: "Venue", name: "venue", widget: "string"}
