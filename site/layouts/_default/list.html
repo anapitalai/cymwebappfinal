@@ -52,57 +52,28 @@
 
   <!--Added this-->
 
-      {{ if eq .Section "program" }}
-    {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
-      <section>
-        {{ if eq "categories" $taxonomyname }}
-          {{ range $key, $value := $taxonomy }}
-            {{ if ne $key "drinks"}}
-              <h2><em>{{ $key }}</em></h2>
-              <hr>
-              {{ range $value.Pages.GroupByParam "type" }}
-                <h3>{{ .Key }}</h3>
-                <ul>
-                {{ range .Pages }}
-                  <li>
-                    <p><strong>{{ .Title }}:</strong> {{ .Params.description }}</p>
-                    <p>{{ .Params.price }}</p>
-                  </li>
-                {{ end }}
-                </ul>
-              {{ end }}
-            {{ end }}
-          {{ end }}
-        {{ end }}
-      </section>
-    {{ end }}
-
-
-      {{ if eq .Section "profile" }}
-    {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
-      <section>
-        {{ if eq "categories" $taxonomyname }}
-          {{ range $key, $value := $taxonomy }}
-            {{ if ne $key "drinks"}}
-              <h2><em>{{ $key }}</em></h2>
-              <hr>
-              {{ range $value.Pages.GroupByParam "type" }}
-                <h3>{{ .Key }}</h3>
-                <ul>
-                {{ range .Pages }}
-                  <li>
-                    <p><strong>{{ .Title }}:</strong> {{ .Params.description }}</p>
-                    <p>{{ .Params.price }}</p>
-                  </li>
-                {{ end }}
-                </ul>
-              {{ end }}
-            {{ end }}
-          {{ end }}
-        {{ end }}
-      </section>
-    {{ end }}
   
+  {{ else if eq .Section "profile" }}
+    <div class="gallery-carousel">
+      {{ range where .Pages "Section" "profile" }}
+       
+        <marquee><h2>{{ .Params.province }}</h2></marquee>
+        </div>
+      {{ end }}
+  
+  {{ end }}
+</div>
+
+  {{ else if eq .Section "program" }}
+    <div class="gallery-carousel">
+      {{ range where .Pages "Section" "program" }}
+        <marquee><h2>{{ .Params.activity }}</h2></marquee>
+        </div>
+      {{ end }}
+  
+  {{ end }}
+</div>
+
 
   <!--Added ends here-->
   {{ else if eq .Section "gallery" }}
