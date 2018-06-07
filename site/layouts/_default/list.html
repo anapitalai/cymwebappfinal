@@ -52,21 +52,6 @@
 
   <!--Added this-->
 
-    {{ else if eq .Section "profile" }}
-    <div class="gallery-carousel">
-      {{ range where .Pages "Section" "profile" }}
-      
-        <marquee><h2>{{ .Params.province }}</h2></marquee>
-      
-      {{ end }}
-    </div>
-    <div class="buttons">
-      <button class="prev half-button">Prev</button>
-      <button class="next half-button">Next</button>
-    </div>
-  {{ end }}
-</div>
-
  
 
   <!--Added ends here-->
