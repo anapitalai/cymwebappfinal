@@ -1,7 +1,7 @@
 ---
 title: YCM
-categories:
-  - tuccongregational
+#categories:
+ # - tuccongregational
 activity: Talent Night + Prayer Walk
 sactivity: Sunday School and Youth Camp
 venue: TUC
