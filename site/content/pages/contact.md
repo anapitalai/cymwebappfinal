@@ -6,11 +6,11 @@ url = "/contact"
 
 ## Please fill out the form below
 
-Let us know when you'd like to book a reservation and we'll contact you within 30 min to confirm or find another time.
+Let us know what you would like us to add or improve in this web app.
 
-<form name="reservation">
+<form name="reservation" action="thank-you" netlify >
   <input type="text" placeholder="Your Name" name="name">
   <input type="email" placeholder="Your Email" name="email">
-  <textarea name="message" placeholder="When would you like to book a reservation?"></textarea>
+  <textarea name="message" placeholder="What would you like us to do for you?"></textarea>
   <button>Send</button>
 </form>
