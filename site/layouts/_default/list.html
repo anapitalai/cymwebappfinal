@@ -9,15 +9,18 @@
             <div class="row">
               <div class="col-sm-6 col-md-4 market">
                  <h2> {{ .Title }}</h2> <br>
-                   {{ .Params.province}} <br>
+                   {{ .Params.province }} <br>
+                   {{ .Params.description }}<br>
                  <a class="mark" href="https://flamboyant-hawking-cb291b.netlify.com/admin">Edit Profile</a>
                
               </div>
 
               <div>
-<a href="https://www.google.com.pg" target="_blank"><img class="leader-image"  src="/img/gallery/anapitalai.jpg" 
-alt="IMAGE ALT TEXT HERE" width="180" height="180" border="10" /></a>
+<a href="https://www.google.com.pg" target="_blank"><img class="leader-image"  src="{{ .Params.image }}" 
+alt="IMAGE" width="180" height="180" border="10" /></a>
 </div>
+
+<img src="" alt="">
             </div>
          <hr>
 
