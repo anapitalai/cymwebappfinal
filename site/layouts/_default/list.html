@@ -17,14 +17,16 @@
          <hr>
 
           {{ end }}
-
+ <!--program section-->
+ 
           {{ else if eq .Section "program" }}
 
           {{ range .Pages }}
           
           <div class="row">
               <div class="col-sm-6 col-md-4 blog">
-                  <h2>{{.Title}}</h2>
+                <a href="https://flamboyant-hawking-cb291b.netlify.com/profile/"> 
+                  <h2>{{.Title}}</h2> </a>
                   <hr> <br>
                   {{ .Params.remarks }} 
                   <hr>   <br>

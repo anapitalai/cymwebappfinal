@@ -42,7 +42,7 @@ alt="IMAGE ALT TEXT HERE" width="180" height="180" border="10" /></a>
 </div>
 
 <div>
-<h2>Weslianne Joseph</h2><br>(Vice Secretary
+<h2>Weslianne Joseph</h2><br>(Vice Secretary)
 <a href="#" target="_blank"><img class="leader-image" src="/img/gallery/anapitalai.jpg" 
 alt="IMAGE ALT TEXT HERE" width="180" height="180" border="10" /></a>
 </div>
