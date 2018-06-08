@@ -5,6 +5,6 @@ description: >-
   ministry
 type: '31'
 province: East New Britain(Duke of York Islander)
-image: /img/gallery/youth.png
+image: /img/gallery/wes.jpg
 ---
 
