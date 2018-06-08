@@ -28,7 +28,8 @@ collections:
    #   - {label: "Supported Meals", name: "categories", widget: "list", default: ["", "dinner"]}
       - {label: "Short Description", name: "description", widget: "text"}
       - {label: "Age", name: "type", widget: "string"}
-      - {label: "Province", name: "province", widget: "string"}  
+      - {label: "Province", name: "province", widget: "string"}
+      - {label: "Gallery Image", name: "image", widget: "image"}
  
   - name: program
     label: "program name" # Used in the UI, ie.: "New Post"
