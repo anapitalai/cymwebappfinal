@@ -27,7 +27,7 @@ alt="IMAGE" width="180" height="180" border="10" /></a>
           {{ end }}
  <!--program section-->
  
-          {{ else if eq .Section "program" }}
+          {{ else if eq .Section "programed" }}
 
           {{ range .Pages }}
           
@@ -42,9 +42,11 @@ alt="IMAGE" width="180" height="180" border="10" /></a>
                {{ .Params.activity }}  {{ .Params.sactivity }}
                <br>
                 {{ .Params.categories }}
+                <div style="color:grey; font-size:16px;">{{ if .Params.categories }}<strong>Categories:</strong> {{range .Params.categories}}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
               </div>
           </div>
           {{ end }}
+          
         
           {{ else if eq .Section "maps" }}
 
@@ -56,12 +58,46 @@ alt="IMAGE" width="180" height="180" border="10" /></a>
                   <img src="{{ .Params.image }}" alt="">
                   {{ .Params.image }} <br>
                   {{ .URL }}
+                   
               </div>
           </div>
           {{ end }}
 
           
+<!--end program section-->
 
+
+
+<!--start-->
+
+{{ else if eq .Section "program" }}
+    <!-- categories are defined in the site/content -->
+    {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+      <section>
+        {{ if eq "categories" $taxonomyname }}
+          {{ range $key, $value := $taxonomy }}
+            {{ if ne $key "drinks"}}
+              <h2><em>{{ $key }}</em></h2>
+              <hr>
+              {{ range $value.Pages.GroupByParam "type" }}
+                <h3>{{ .Key }}</h3>
+                <ul>
+                {{ range .Pages }}
+                  <li>
+                    <p><strong>{{ .Title }}:</strong> {{ .Params.day }}</p>
+                    <p>{{ .Params.month }}</p>
+                    <p>{{ .Params.year }}</p>
+                    <p>{{ .Params.remarks }}</p>
+                  </li>
+                {{ end }}
+                </ul>
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </section>
+    {{ end }}
+<!--end-->
 
         {{ else if eq .Section "gallery" }}
       
@@ -82,7 +118,21 @@ alt="IMAGE" width="180" height="180" border="10" /></a>
 </div>
 
 
+
 {{ partial "footer" . }}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!--<div class="content container {{ .Title }} {{ .Section | urlize }}">
