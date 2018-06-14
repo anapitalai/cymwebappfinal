@@ -4,13 +4,14 @@
 .sidebar-img{
     border-image-width:32px;
     height: 32px;
+    width:100%;
     border-radius:5px;
 }
 
 .sidebar-img:hover{
     border-image-width:32px;
     height: 32px;
-    border-radius:20000px;
+    border-radius:2000px;
 }
 
 .image-container{
