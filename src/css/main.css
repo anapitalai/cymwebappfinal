@@ -28,3 +28,10 @@
     border-radius:5px;
     margin:10px;
 }
+
+.ima{
+    background-image: url("/img/gallery/eli.JPG");
+  background-position: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
