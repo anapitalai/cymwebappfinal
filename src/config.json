@@ -1,0 +1,9 @@
+{
+  "consumerKey": "mQYUSOvJVelVbvoa7KNj5Jc4r",
+  "consumerSecret": "F6mfRPxO6z8kjmwhHe6WQbKFHzkl5eidPmEkjkwyVn3kwmWKhn",
+  "accessToken": "871293043-JtkKqWOrCrGYLGig7OrGGEHMM4aL7rs3o9Q6VYte",
+  "accessSecret": "PePjb4i5SIeFLVkvX0eIxf8zyk2jts7kpcqdRWkkfT5zc",
+  "slackWebhook": "https://hooks.slack.com/services/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",
+  "slackChannel": "#general",
+  "keywords": "web applications,jamstack,nodejs,html,cascading stylesheets,javascript"
+}
