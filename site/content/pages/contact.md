@@ -12,5 +12,6 @@ Let us know what you would like us to add or improve in this web app.
   <input type="text" placeholder="Your Name" name="name">
   <input type="email" placeholder="Your Email" name="email">
   <textarea name="message" placeholder="What would you like us to do for you?"></textarea>
+  <div data-netlify-recaptcha></div>
   <button>Send</button>
 </form>
