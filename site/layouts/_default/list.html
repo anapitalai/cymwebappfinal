@@ -1,12 +1,12 @@
 {{ partial "header" . }}
-<div>
+
     <div class="content container {{ .Title }} {{ .Section | urlize }}">
         <h1>{{ .Section }}</h1>
         {{ if eq .Section "profile"}}
           {{ range .Pages }}
-      
-
-            <div class="row">
+           <div>
+  
+            <div class="row profile-flexbox">
               <div class="col-sm-6 col-md-4 market">
                  <h2> {{ .Title }}</h2> <br>
                    {{ .Params.province }} <br>
